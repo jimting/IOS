@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="神奇寶貝圖鑒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-Pd-PM8">
+                                <rect key="frame" x="53" y="77" width="218" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="wWw-u1-PZa">
+                                <rect key="frame" x="0.0" y="182" width="375" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-bD-Jrx">
+                                <rect key="frame" x="0.0" y="548" width="375" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BonusButton-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="FI3-99-pPk">
+                                <rect key="frame" x="289" y="108" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHO-3y-dsW">
+                                <rect key="frame" x="68" y="296" width="239" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Start!" backgroundImage="PokemonBoard-iloveimg-converted">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TEF-Of-NyH" kind="modal" id="nib-Xh-IGL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nnL-qX-fNN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BnW-rf-1CX">
+            <objects>
+                <viewController id="TEF-Of-NyH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bh5-9c-lWQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iPL-pJ-ymb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAy-dM-bhu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf8-hS-27e">
+                                <rect key="frame" x="300" y="76" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BonusButton-iloveimg-converted"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="7dY-U9-7jk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PokemonBoard-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="QQr-of-d6B">
+                                <rect key="frame" x="23" y="49" width="247" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="PWO-8O-e9q">
+                                <rect key="frame" x="0.0" y="316" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="07P-ms-yFC">
+                                <rect key="frame" x="0.0" y="513" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMJ-4i-CuA">
+                                <rect key="frame" x="245" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="RightButton"/>
+                                <connections>
+                                    <segue destination="1Eb-8j-jH8" kind="modal" id="rqx-bQ-vWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWn-Il-XFB">
+                                <rect key="frame" x="35" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="LeftButton"/>
+                                <connections>
+                                    <segue destination="SYv-7h-t87" kind="modal" id="tqU-sz-q6g"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皮卡丘" translatesAutoresizingMaskIntoConstraints="NO" id="VEW-rd-XSl">
+                                <rect key="frame" x="57" y="69" width="179" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：皮卡丘 屬性：雷 特性：叫聲是皮卡皮卡" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-TF-0Ms">
+                                <rect key="frame" x="36" y="384" width="302" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYn-pF-AOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YPL-uX-iYn">
+            <objects>
+                <viewController id="1Eb-8j-jH8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BKx-iO-fqB"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Pk-3y-IDk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfN-QU-0xQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT4-Bp-c70">
+                                <rect key="frame" x="300" y="76" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BonusButton-iloveimg-converted"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="r8F-kn-a1j"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PokemonBoard-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="TjX-Rt-jJg">
+                                <rect key="frame" x="23" y="49" width="247" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-pZ-U5c">
+                                <rect key="frame" x="0.0" y="316" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="RjW-Kq-Smi">
+                                <rect key="frame" x="0.0" y="513" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8J-PK-20B">
+                                <rect key="frame" x="245" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="RightButton"/>
+                                <connections>
+                                    <segue destination="Dob-Ek-gD2" kind="modal" id="BmE-E4-QAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feK-nf-EOg">
+                                <rect key="frame" x="35" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="LeftButton"/>
+                                <connections>
+                                    <segue destination="TEF-Of-NyH" kind="modal" id="Lic-RZ-wiW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：小火龍 屬性：火 特性：長得像恐龍" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-ed-jRU">
+                                <rect key="frame" x="36" y="384" width="302" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小火龍" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-s3-93K">
+                                <rect key="frame" x="59" y="87" width="174" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOt-jg-SML" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="722"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="utK-Ky-meA">
+            <objects>
+                <viewController id="Dob-Ek-gD2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZgI-03-8bJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="YTa-9Y-fid"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ep5-tW-glh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-y9-aND">
+                                <rect key="frame" x="300" y="76" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BonusButton-iloveimg-converted"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="JaE-jr-nOL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PokemonBoard-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="svS-CG-Hzv">
+                                <rect key="frame" x="23" y="49" width="247" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="gGq-u6-Elr">
+                                <rect key="frame" x="0.0" y="316" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-Wf-kvZ">
+                                <rect key="frame" x="0.0" y="513" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rw-g7-FE0">
+                                <rect key="frame" x="245" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="RightButton"/>
+                                <connections>
+                                    <segue destination="ZjD-dh-sCJ" kind="modal" id="dLL-Mc-lOS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lji-gW-IIB">
+                                <rect key="frame" x="35" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="LeftButton"/>
+                                <connections>
+                                    <segue destination="1Eb-8j-jH8" kind="modal" id="hRh-5n-oBZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：傑尼龜 屬性：水 特性：是隻可愛小龜龜" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fQv-6Z-Faa">
+                                <rect key="frame" x="36" y="384" width="302" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="傑尼龜" translatesAutoresizingMaskIntoConstraints="NO" id="A7r-kA-Y2b">
+                                <rect key="frame" x="46" y="82" width="184" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoV-80-OMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="1457"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JfS-dq-sq9">
+            <objects>
+                <viewController id="ZjD-dh-sCJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNd-wA-eii"/>
+                        <viewControllerLayoutGuide type="bottom" id="8XZ-Di-vj7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2sw-mj-3JX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqY-1q-z6U">
+                                <rect key="frame" x="300" y="76" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BonusButton-iloveimg-converted"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="btZ-Pn-Tyh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PokemonBoard-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="ObM-VH-Acd">
+                                <rect key="frame" x="23" y="49" width="247" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="bg2-IV-2sN">
+                                <rect key="frame" x="0.0" y="316" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="XqX-xh-oQY">
+                                <rect key="frame" x="0.0" y="513" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS4-xQ-g8Q">
+                                <rect key="frame" x="245" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="RightButton"/>
+                                <connections>
+                                    <segue destination="SYv-7h-t87" kind="modal" id="jET-iT-vYm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-qn-HBx">
+                                <rect key="frame" x="35" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="LeftButton"/>
+                                <connections>
+                                    <segue destination="Dob-Ek-gD2" kind="modal" id="xh7-lS-Nc1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：妙蛙種子 屬性：草 特性：皮鞭可以拉超長" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7d-HI-Dy9">
+                                <rect key="frame" x="36" y="384" width="302" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="妙蛙種子" translatesAutoresizingMaskIntoConstraints="NO" id="Rw7-KH-Kbr">
+                                <rect key="frame" x="67" y="97" width="159" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VA-Hp-n3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="2160"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FXP-Mb-v42">
+            <objects>
+                <viewController id="SYv-7h-t87" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jDM-jj-m05"/>
+                        <viewControllerLayoutGuide type="bottom" id="20Q-7k-gNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GRO-Wu-fcj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwL-7d-huO">
+                                <rect key="frame" x="300" y="76" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BonusButton-iloveimg-converted"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="iUF-8p-C3L"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PokemonBoard-iloveimg-converted" translatesAutoresizingMaskIntoConstraints="NO" id="hUH-B4-2JV">
+                                <rect key="frame" x="23" y="49" width="247" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="Ta7-sg-cC9">
+                                <rect key="frame" x="0.0" y="316" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upline 拷貝" translatesAutoresizingMaskIntoConstraints="NO" id="0Io-eU-2yo">
+                                <rect key="frame" x="0.0" y="513" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bki-Bw-6xK">
+                                <rect key="frame" x="245" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="RightButton"/>
+                                <connections>
+                                    <segue destination="TEF-Of-NyH" kind="modal" id="eTb-QH-69m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ir-MZ-A9Y">
+                                <rect key="frame" x="35" y="591" width="82" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="LeftButton"/>
+                                <connections>
+                                    <segue destination="ZjD-dh-sCJ" kind="modal" id="aa6-Ce-UVM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：彼得潘 屬性：神 特性：哇賽唱歌超好聽" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Eg-hu-Uf7">
+                                <rect key="frame" x="36" y="384" width="302" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Peter" translatesAutoresizingMaskIntoConstraints="NO" id="dKQ-qJ-wDP">
+                                <rect key="frame" x="36" y="66" width="213" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76950651407241821" green="0.070911161601543427" blue="0.15938055515289307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWv-Y8-TOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-748"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BonusButton-iloveimg-converted" width="35" height="33"/>
+        <image name="LeftButton" width="62" height="28"/>
+        <image name="Peter" width="960" height="960"/>
+        <image name="PokemonBoard-iloveimg-converted" width="150" height="169"/>
+        <image name="RightButton" width="64" height="27"/>
+        <image name="downline 拷貝" width="239" height="58"/>
+        <image name="upline 拷貝" width="239" height="58"/>
+        <image name="傑尼龜" width="869" height="882"/>
+        <image name="妙蛙種子" width="1859" height="1704"/>
+        <image name="小火龍" width="896" height="992"/>
+        <image name="皮卡丘" width="994" height="1022"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xh7-lS-Nc1"/>
+        <segue reference="dLL-Mc-lOS"/>
+        <segue reference="jET-iT-vYm"/>
+        <segue reference="btZ-Pn-Tyh"/>
+        <segue reference="nib-Xh-IGL"/>
+        <segue reference="hRh-5n-oBZ"/>
+    </inferredMetricsTieBreakers>
+</document>
